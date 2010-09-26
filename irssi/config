@@ -268,7 +268,11 @@ statusbar = {
 settings = {
   core = { real_name = "nbk"; user_name = "nbk"; nick = "nbk"; };
   "fe-text" = { actlist_sort = "refnum"; };
-  "fe-common/core" = { theme = "fear2"; };
+  "fe-common/core" = { theme = "fear"; };
+  "perl/core/scripts" = {
+    growl_net_client = "localhost";
+    growl_net_sticky_away = "yes";
+  };
 };
 hilights = (
   { text = "nigelk"; nick = "yes"; word = "yes"; },
