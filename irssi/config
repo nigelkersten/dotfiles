@@ -281,6 +281,26 @@ hilights = (
 windows = {
   1 = { immortal = "yes"; name = "(status)"; level = "ALL"; };
   2 = { name = "hilight"; sticky = "yes"; };
+  3 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#puppet";
+        tag = "freenode";
+      }
+    );
+  };
+  4 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#puppet-dev";
+        tag = "freenode";
+      }
+    );
+  };
 };
 mainwindows = {
   1 = { first_line = "10"; lines = "33"; };
