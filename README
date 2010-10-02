@@ -1,2 +1,8 @@
 This is the home for all my non-sensitive dotfiles.
 
+~/.vimrc -> ~/dotfiles/vimrc
+~/.vim   -> ~/dotfiles/vim
+
+~/.irssi -> ~/dotfiles/irssi
+
+etc
