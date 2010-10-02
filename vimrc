@@ -6,7 +6,8 @@ set paste
 
 
 ".swp dir for all so we don't litter
-set directory=~/.vim/swp
+"not in ~/.vim for dotfile ease.
+set directory=~/.vimswp
 
 
 " indent
