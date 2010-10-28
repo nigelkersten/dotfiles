@@ -268,7 +268,7 @@ statusbar = {
 settings = {
   core = { real_name = "nbk"; user_name = "nbk"; nick = "nbk"; };
   "fe-text" = { actlist_sort = "refnum"; };
-  "fe-common/core" = { theme = "fear"; };
+  "fe-common/core" = { theme = "default"; hilight_nick_matches = "yes"; };
   "perl/core/scripts" = {
     growl_net_client = "localhost";
     growl_net_sticky_away = "yes";
@@ -301,8 +301,28 @@ windows = {
       }
     );
   };
+  5 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#puppetlabs";
+        tag = "freenode";
+      }
+    );
+  };
+  6 = {
+    items = (
+      {
+        type = "QUERY";
+        chat_type = "IRC";
+        name = "bodepd";
+        tag = "freenode";
+      }
+    );
+  };
 };
 mainwindows = {
-  1 = { first_line = "10"; lines = "33"; };
-  2 = { first_line = "1"; lines = "9"; };
+  1 = { first_line = "9"; lines = "33"; };
+  2 = { first_line = "1"; lines = "8"; };
 };
