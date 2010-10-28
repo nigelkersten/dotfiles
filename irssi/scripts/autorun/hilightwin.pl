@@ -18,7 +18,7 @@ sub sig_printtext {
 
   # change to (MSGLEVEL_HILIGHT|MSGLEVEL_MSGS) to work for
   # all privmsgs too
-  if (($dest->{level} & (MSGLEVEL_HILIGHT)) &&
+  if (($dest->{level} & (MSGLEVEL_HILIGHT|MSGLEVEL_MSGS)) &&
       ($dest->{level} & MSGLEVEL_NOHILIGHT) == 0) {
     $window = Irssi::window_find_name('hilight');
 
