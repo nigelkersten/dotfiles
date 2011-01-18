@@ -44,6 +44,8 @@ set statusline=%F%m%r%h%w[%L][%{&ff}]%y[%p%%][%04l,%04v]
 set scrolloff=20
 set ttyfast
 set shortmess=aIoOTt
+set list
+set listchars=tab:»·,trail:·
 
 if has("gui_running")
 	colorscheme evening
