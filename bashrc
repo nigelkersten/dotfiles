@@ -1,9 +1,10 @@
-case $- in
-  *i*)    # do things for interactive shell
-    exit 0
-    ;;
-  *)      # do things for non-interactive shell
-    ;;
-esac
-
 alias shell='ssh nigel@shell.puppetlabs.com'
+
+. /opt/local/etc/bash_completion
+
+complete -cf sudo
+
+export ENVPUPPET_BASEDIR=~/src
+alias puppet='~/src/puppet/ext/envpuppet puppet'
+alias facter='~/src/puppet/ext/envpuppet facter'
+
