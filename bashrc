@@ -1,7 +1,7 @@
 alias shell='ssh nigel@shell.puppetlabs.com'
 
 
-[ -f /opt/local/etc/bash_completion] && . /opt/local/etc/bash_completion
+[ -f /opt/local/etc/bash_completion ] && . /opt/local/etc/bash_completion
 
 complete -cf sudo
 
