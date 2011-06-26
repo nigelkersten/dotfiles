@@ -14,5 +14,7 @@ function parse_git_branch {
   echo "("${ref#refs/heads/}")"
 }
 
+PROMPT_COMMAND='echo -e "\033];$(hostname -s)\007"'
+
 PS1="\W \u \$(parse_git_branch)\$ "
 
