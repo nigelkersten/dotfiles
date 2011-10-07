@@ -56,11 +56,11 @@ if has("gui_running")
 endif
 
 " Turn on spell checking with English dictionary
-set spell
-set spelllang=en
-set spellsuggest=9 "show only 9 suggestions for misspelled words
+"set spell
+"set spelllang=en
+"set spellsuggest=9 "show only 9 suggestions for misspelled words
 " Selectively turn spelling off.
-autocmd FileType c,cpp,lisp,puppet,ruby,vim setlocal nospell
+"autocmd FileType c,cpp,lisp,puppet,ruby,vim setlocal nospell
 
 " Enable indent folding
 if version >= 702
