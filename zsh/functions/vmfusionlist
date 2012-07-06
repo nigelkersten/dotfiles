@@ -1,0 +1,3 @@
+function vmfusionlist() {
+  vmrun list | gawk 'BEGIN { ORS=" " ; FS="/" }  { if (NR>1) {print $NF} }'
+}

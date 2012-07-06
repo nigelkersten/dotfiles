@@ -1,1 +1,1 @@
-alias vmrun='/Applications/VMware Fusion.app/Contents/Library/vmrun'
+alias vmrun='/Applications/VMware\ Fusion.app/Contents/Library/vmrun'
