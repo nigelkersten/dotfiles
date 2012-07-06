@@ -1,0 +1,3 @@
+EDITOR="vim"
+PAGER="less"
+
