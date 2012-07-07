@@ -1,0 +1,4 @@
+function vcs_status {
+    git branch >/dev/null 2>/dev/null && echo '±' && return
+    echo '○'
+}

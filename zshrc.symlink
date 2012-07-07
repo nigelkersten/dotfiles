@@ -6,7 +6,8 @@ vim_swap=${HOME}/.vimswp
 
 export ZSH=$HOME/dotfiles/zsh
 
-for config_file ($ZSH/**/*.zsh) source $config_file
+for config_file ($ZSH/**/*.zsh ) source $config_file
+for config_file ($ZSH/functions/* ) source $config_file
 
 fpath=($ZSH/functions $fpath)
 

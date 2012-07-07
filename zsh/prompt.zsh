@@ -1,8 +1,8 @@
+setopt promptsubst
 autoload -U colors && colors
 autoload -U promptinit
 promptinit
 
-#export PS1='%{%}%n%{%}@%{%}%m %{%}%~ %{%}%%'
-
-prompt walters
+precmd() { print "$(puppetversion) $(vmfusionlist)" }
+PS1="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg[yellow]%}%~ %{$reset_color%}%% "
 
