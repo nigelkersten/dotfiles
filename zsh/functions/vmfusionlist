@@ -1,6 +1,0 @@
-function vmfusionlist() {
-  output=$(vmrun list | gawk 'BEGIN { ORS=" " ; FS="/" }  { if (NR>1) {sub(/.vmx/, "", $NF) ; print $NF} }')
-  if [[ $output != "" ]]; then
-    echo " | ${output}"
-  fi
-}

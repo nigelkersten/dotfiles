@@ -1,3 +1,0 @@
-function puppetversion() {
-  gawk 'BEGIN { ORS=" " } /PUPPETVERSION =/ { gsub("\047", "") ; printf $3 }' ~/src/puppet/lib/puppet.rb
-}
