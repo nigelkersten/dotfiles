@@ -6,7 +6,7 @@ autoload -U promptinit && promptinit
 #function precmd() { print "$fg[blue]$(puppetversion)$reset_color $fg[yellow]$(vmfusionlist)$reset_color" }
 
 function vmfusionlist() {
-  local vms=$(vmrun list | gawk 'BEGIN { ORS=":" ; FS="/" }  { if (NR>1) {sub(/.vmx/, "", $NF) ; print $NF} }')
+  vms=$(vmrun list | gawk 'BEGIN { ORS=":" ; FS="/" }  { if (NR>1) {sub(/.vmx/, "", $NF) ; print $NF} }')
   echo ${vms%%:}
 }
 
@@ -15,8 +15,8 @@ function puppetversion() {
 }
 
 
-PROMPT="%{$fg[white]%}%n@%m %{$fg[blue]%}%~ %{$reset_color%}% 
-%{$fg[white]%}[%{$fg[black]%}%h%{$fg[white]%}]%{$fg[black]%}%# "
+PROMPT='⌈%{$fg[red]%}(%{$fg[white]%}%h%{$fg[red]%}) %{$fg[white]%}%n@%m %{$fg[blue]%}%~ %{$reset_color%}% %{$reset_color%}%{$fg[white]%} vms(%{$fg[magenta]%}%{$(vmfusionlist)%}%{$fg[white]%}) puppet(%{$fg[magenta]%}%{$(puppetversion)%}%{$fg[white]%})%{$reset_color%}
+⌊%{$fg[black]%}%# '
 
-RPROMPT="%{$reset_color%}%{$fg[white]%}[%{$fg[magenta]%}$(vmfusionlist)%{$fg[white]%}][%{$fg[magenta]%}$(puppetversion)%{$fg[white]%}]%{$reset_color%}"
+#RPROMPT='%{$reset_color%}%{$fg[white]%}vms(%{$fg[magenta]%}%{$(vmfusionlist)%}%{$fg[white]%})puppet(%{$fg[magenta]%}%{$(puppetversion)%}%{$fg[white]%})%{$reset_color%}'
 

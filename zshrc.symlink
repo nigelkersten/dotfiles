@@ -11,6 +11,8 @@ for config_file ($ZSH/functions/* ) source $config_file
 
 fpath=($ZSH/functions $fpath)
 
-autoload -U compinit
-compinit
+autoload -U compinit && compinit
 
+if [[ -z $TMUX ]]; then
+  tmux attach
+fi
