@@ -1,1 +1,21 @@
+# pbcopy please!
+set-option -g default-command "reattach-to-user-namespace -l zsh"
+# ctrl-a instead of ctrl-b
+unbind C-b
+set -g prefix C-a
+bind-key C-a last-window
+
+set -g default-terminal "screen-256color" 
+set -g history-limit 10000
+
+
+# look n feel
+set -g status-bg black
+set -g status-fg white
+set -g status-left ''
+set -g status-left-length 0
+set-window-option -g window-status-current-bg red
+
+
+
 new-session

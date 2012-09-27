@@ -14,5 +14,7 @@ fpath=($ZSH/functions $fpath)
 autoload -U compinit && compinit
 
 if [[ -z $TMUX ]]; then
-  tmux attach
+  tmux attach -d
 fi
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
