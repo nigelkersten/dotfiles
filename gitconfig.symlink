@@ -1,0 +1,5 @@
+[user]
+	name = Nigel Kersten
+	email = nigel@explanatorygap.net
+[diff]
+	algorithm = patience
