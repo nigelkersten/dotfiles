@@ -10,8 +10,13 @@ function vmfusionlist() {
   echo ${vms%%:}
 }
 
+# worse with 3.0...
 function puppetversion() {
-  gawk 'BEGIN { ORS=" " } /PUPPETVERSION =/ { gsub("\047", "") ; printf $3 }' ~/src/puppet/lib/puppet.rb
+  verfile=~/src/puppet/lib/puppet.rb
+  if [ -f ~/src/puppet/lib/puppet/version.rb ]; then
+    verfile=~/src/puppet/lib/puppet/version.rb
+  fi
+  gawk 'BEGIN { ORS=" " } /PUPPETVERSION =/ { gsub("\047", "") ; printf $3 }' $verfile
 }
 
 

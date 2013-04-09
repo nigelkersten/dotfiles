@@ -39,6 +39,7 @@ set showmatch
 set showmode
 set ruler
 set number
+let html_number_lines = 0
 set laststatus=2
 set statusline=%F%m%r%h%w[%L][%{&ff}]%y[%p%%][%04l,%04v]
 set scrolloff=20
