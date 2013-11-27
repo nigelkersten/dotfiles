@@ -3,3 +3,5 @@
 	email = nigel@explanatorygap.net
 [diff]
 	algorithm = patience
+[push]
+	default = simple

@@ -6,4 +6,7 @@ HISTSIZE=50000
 SAVEHIST=$HISTSIZE
 
 PATH="/usr/local/bin:/usr/local/sbin:$PATH"
-PATH="/usr/local/go/bin:$PATH"
+GOROOT=$HOME/go
+PATH="$GOROOT/bin:$PATH"
+
+export GOPATH=$HOME/src/gocode
