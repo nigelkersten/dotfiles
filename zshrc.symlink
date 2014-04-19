@@ -17,4 +17,4 @@ if [[ -z $TMUX ]]; then
   tmux attach -d
 fi
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=$PATH:/opt/operations/bin:/opt/operations/sbin

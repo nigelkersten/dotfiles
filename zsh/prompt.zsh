@@ -20,8 +20,8 @@ function puppetversion() {
 }
 
 
-PROMPT='⌈%{$fg[red]%}(%{$fg[white]%}%h%{$fg[red]%}) %{$fg[white]%}%n@%m %{$fg[blue]%}%~ %{$reset_color%}% %{$reset_color%}%{$fg[white]%} vms(%{$fg[magenta]%}%{$(vmfusionlist)%}%{$fg[white]%}) puppet(%{$fg[magenta]%}%{$(puppetversion)%}%{$fg[white]%})%{$reset_color%}
-⌊%{$fg[black]%}%# '
+PROMPT='╓%{$fg[red]%}(%{$fg[white]%}%h%{$fg[red]%}) %{$fg[white]%}%n@%m %{$fg[blue]%}%~ %{$reset_color%}% %{$reset_color%}%{$fg[white]%} vms(%{$fg[magenta]%}%{$(vmfusionlist)%}%{$fg[white]%}) puppet(%{$fg[magenta]%}%{$(puppetversion)%}%{$fg[white]%})%{$reset_color%}
+╙%{$fg[black]%}> '
 
 #RPROMPT='%{$reset_color%}%{$fg[white]%}vms(%{$fg[magenta]%}%{$(vmfusionlist)%}%{$fg[white]%})puppet(%{$fg[magenta]%}%{$(puppetversion)%}%{$fg[white]%})%{$reset_color%}'
 
