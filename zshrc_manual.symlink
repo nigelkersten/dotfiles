@@ -12,6 +12,8 @@ for config_file ($ZSH/functions/* ) source $config_file
 fpath=($ZSH/functions $fpath)
 
 autoload -U compinit && compinit
+zstyle ':completion:*:descriptions' format '%U%B%d%b%u' 
+zstyle ':completion:*:warnings' format '%BSorry, no matches for: %d%b'
 
 if [[ -z $TMUX ]]; then
   tmux attach -d
