@@ -1,5 +1,7 @@
-ZSHA_BASE=$HOME/dotfiles
-source $ZSHA_BASE/antigen/antigen.zsh
+DOTFILES=$HOME/dotfiles
+ZSH_BASE=$DOTFILES/zsh
+
+source $DOTFILES/antigen/antigen.zsh
 
 antigen-use oh-my-zsh
 antigen-bundle git
@@ -11,8 +13,18 @@ fi
 antigen-bundle vagrant
 antigen-bundle zsh-users/zsh-syntax-highlighting
 antigen-bundle zsh-users/zsh-history-substring-search
-antigen-bundle $ZSHA_BASE/bundles/stv
-
-antigen-theme $ZSHA_BASE/themes/mgdm/mgdm.zsh-theme
+antigen-bundle $ZSH_BASE/bundles/stv
 
 antigen-apply
+
+if [[ -z $TMUX ]]; then
+  tmux attach -d
+fi
+
+
+source $ZSH_BASE/aliases.zsh
+source $ZSH_BASE/env.zsh
+source $ZSH_BASE/prompt.zsh
+source $ZSH_BASE/options.zsh
+
+for config_file ($ZSH_BASE/functions/* ) source $config_file
