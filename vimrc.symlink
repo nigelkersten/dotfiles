@@ -47,6 +47,7 @@ set ttyfast
 set shortmess=aIoOTt
 set list
 set listchars=tab:»·,trail:·
+set colorcolumn=81
 
 if has("gui_running")
   set guifont=Consolas:h18
