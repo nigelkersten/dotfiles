@@ -1,7 +1,10 @@
 [user]
-	name = Nigel Kersten
 	email = nigel@explanatorygap.net
 [diff]
 	algorithm = patience
 [push]
 	default = simple
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
