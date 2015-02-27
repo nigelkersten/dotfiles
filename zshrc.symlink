@@ -14,7 +14,7 @@ source /Users/nigel/src/antigen/antigen.zsh
  antigen bundle zsh-users/zsh-syntax-highlighting
 #
 # # Load the theme.
-antigen theme candy
+antigen theme kphoen
 #
 # # Tell antigen that you're done.
 antigen apply

@@ -48,7 +48,15 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+set undodir=~/.vimtmp/.undo//
+set backupdir=~/.vimtmp/.backup//
+set directory=~/.vimtmp/.swp//
+
 set laststatus=2
+set colorcolumn=80
 syntax enable
 set background=light
 colorscheme solarized
+
+set relativenumber 
+set number
