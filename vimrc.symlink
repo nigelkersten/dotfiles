@@ -12,6 +12,8 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-commentary'
 Plugin 'scrooloose/syntastic'
 Plugin 'bling/vim-airline'
+Plugin 'edkolev/tmuxline.vim'
+Plugin 'altercation/vim-colors-solarized'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -47,3 +49,6 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 set laststatus=2
+syntax enable
+set background=light
+colorscheme solarized
