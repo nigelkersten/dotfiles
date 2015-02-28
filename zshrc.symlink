@@ -5,11 +5,11 @@ source /Users/nigel/src/antigen/antigen.zsh
 #
 # # Bundles from the default repo (robbyrussell's oh-my-zsh).
  antigen bundle git
-# antigen bundle heroku
  antigen bundle pip
  antigen bundle lein
  antigen bundle command-not-found
-#
+ antigen bundle zsh-users/zsh-completions src
+
 # # Syntax highlighting bundle.
  antigen bundle zsh-users/zsh-syntax-highlighting
 #

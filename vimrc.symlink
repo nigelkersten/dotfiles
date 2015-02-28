@@ -14,6 +14,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'bling/vim-airline'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'rodjek/vim-puppet'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
