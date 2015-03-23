@@ -18,6 +18,7 @@ Plugin 'rodjek/vim-puppet'
 Plugin 'klen/python-mode.git'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'kien/ctrlp.vim'
+Plugin 'jamessan/vim-gnupg'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
