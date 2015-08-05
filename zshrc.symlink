@@ -23,3 +23,4 @@ antigen apply
 if [[ -z $TMUX ]]; then
 	  tmux attach -d
 fi
+export PATH="/usr/local/sbin:$PATH"
