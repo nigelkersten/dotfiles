@@ -32,8 +32,8 @@ set directory=~/.vimtmp/.swp//
 set laststatus=2
 set colorcolumn=80
 syntax enable
-set background=light
-colorscheme solarized
+set background=dark
+"colorscheme solarized
 
 set relativenumber 
 set number
