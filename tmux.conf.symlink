@@ -5,11 +5,9 @@ unbind C-b
 set -g prefix C-a
 bind a send-prefix
 bind-key C-a last-window
-set -g default-terminal "screen-256color"
+# set -g default-terminal "xterm-256color""
 set -g history-limit 10000
-set-option -g default-shell /bin/zsh
-
-
+# set-option -g default-shell /bin/zsh
 source-file ~/src/dotfiles/tmux_status.conf
 
 new-session
