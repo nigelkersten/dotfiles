@@ -1,13 +1,15 @@
-# allow pbcopy etc
-set-option -g default-command "reattach-to-user-namespace -l zsh"
-# ctrl-a instead of ctrl-b
 unbind C-b
-set -g prefix C-a
 bind a send-prefix
+bind r source-file ~/.tmux.conf
 bind-key C-a last-window
-# set -g default-terminal "xterm-256color""
+
+set -g prefix C-a
 set -g history-limit 10000
-# set-option -g default-shell /bin/zsh
+set -g mouse on
+
+set-option -g default-shell /bin/zsh
+set-option -g default-command "reattach-to-user-namespace -l zsh"
+
 source-file ~/src/dotfiles/tmux_status.conf
 
 new-session

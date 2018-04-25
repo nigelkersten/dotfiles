@@ -29,10 +29,10 @@ set backupdir=~/.vimtmp/.backup//
 set directory=~/.vimtmp/.swp//
 
 set laststatus=2
+highlight ColorColumn ctermbg=7
 set colorcolumn=80
 syntax enable
 set background=dark
-"colorscheme solarized
 
 set relativenumber 
 set number
