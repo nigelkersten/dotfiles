@@ -2,6 +2,8 @@ unbind C-b
 bind a send-prefix
 bind r source-file ~/.tmux.conf
 bind-key C-a last-window
+bind \ split-window -h # Split panes horizontal
+bind - split-window -v # Split panes vertically
 
 set -g prefix C-a
 set -g history-limit 10000

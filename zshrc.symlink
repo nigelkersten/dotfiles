@@ -19,6 +19,8 @@ antigen theme kphoen
 # Tell antigen that you're done.
 antigen apply
 
+export TERM=screen-256color
+
 if [[ -z $TMUX ]]; then
 	  tmux attach -d
 fi
