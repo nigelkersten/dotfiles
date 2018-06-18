@@ -11,6 +11,7 @@ set -g mouse on
 
 set-option -g default-shell /bin/zsh
 set-option -g default-command "reattach-to-user-namespace -l zsh"
+bind-key    -T copy-mode-vi MouseDragEnd1Pane send-keys -X copy-pipe-and-cancel "reattach-to-user-namespace pbcopy"
 
 source-file ~/src/dotfiles/tmux_status.conf
 

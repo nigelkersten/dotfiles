@@ -32,7 +32,7 @@ set directory=~/.vimtmp/.swp//
 
 set laststatus=2
 highlight ColorColumn ctermbg=7
-set colorcolumn=80
+set colorcolumn=120
 set bg=light
 syntax enable
 

@@ -8,7 +8,7 @@ antigen bundle git
 antigen bundle pip
 antigen bundle lein
 antigen bundle command-not-found
-antigen bundle zsh-users/zsh-completions src
+antigen bundle zsh-users/zsh-completions
 
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
