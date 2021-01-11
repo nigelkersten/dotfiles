@@ -2,8 +2,6 @@ unbind C-b
 bind a send-prefix
 bind r source-file ~/.tmux.conf
 bind-key C-a last-window
-bind \ split-window -h # Split panes horizontal
-bind - split-window -v # Split panes vertically
 
 set -g prefix C-a
 set -g history-limit 10000
@@ -12,6 +10,15 @@ set -g mouse off
 set-option -g default-shell /bin/zsh
 set-option -g default-command "reattach-to-user-namespace -l zsh"
 
-source-file ~/src/dotfiles/tmux_status.conf
+
+# List of plugins
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-sensible'
+
+set -g @plugin 'seebi/tmux-colors-solarized'
+set -g @colors-solarized 'dark'
+
+# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
+run '~/.tmux/plugins/tpm/tpm'
 
 new-session
