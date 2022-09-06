@@ -18,6 +18,8 @@ set -g @plugin 'tmux-plugins/tmux-sensible'
 set -g @plugin 'seebi/tmux-colors-solarized'
 set -g @colors-solarized 'dark'
 
+set -g status-right '#(gitmux "#{pane_current_path}")'
+
 # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
 run '~/.tmux/plugins/tpm/tpm'
 
