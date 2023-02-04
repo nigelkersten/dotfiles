@@ -1,4 +1,4 @@
-source /usr/local/share/antigen/antigen.zsh
+source $(brew --prefix)/share/antigen/antigen.zsh
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
@@ -20,6 +20,17 @@ antigen theme kphoen
 antigen apply
 
 export TERM=screen-256color
+
+# GPG Yubi SSH stuff
+GPG_TTY=$(tty)
+export GPG_TTY
+if [ -f "${HOME}/.gpg-agent-info" ]; then
+  . "${HOME}/.gpg-agent-info"
+  export GPG_AGENT_INFO
+  export SSH_AUTH_SOCK
+fi
+
+
 
 if [[ -z $TMUX ]]; then
 	  tmux attach -d
