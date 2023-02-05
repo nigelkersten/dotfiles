@@ -1,5 +1,8 @@
-~/.irssi -> ~/dotfiles/irssi
-~/.vimrc -> ~/dotfiles/vimrc.symlink
-~/.vim   -> ~/dotfiles/vim.symlink
-~/.zshrc -> ~/dotfiles/zshrc.symlink
+~/.irssi -> dotfiles/irssi
+~/.config/kitty/kitty.comf -> dotfiles/kitty.conf.symlink
+~/.vimrc -> dotfiles/vimrc.symlink
+~/.zshrc -> dotfiles/zshrc.symlink
+~/.gitconfig -> dotfiles/gitconfig.symlink
+~/.tmux-powerlinerc dotfiles/tmux-powerlinerc.symlink
+~/.tmux.conf -> dotfiles/tmux.conf.symlink
 

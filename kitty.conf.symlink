@@ -1,0 +1,4 @@
+font_family FiraCode-Retina
+font_size 14.0
+macos_titlebar_color background
+include ./theme.conf

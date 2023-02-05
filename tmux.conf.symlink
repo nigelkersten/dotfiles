@@ -5,7 +5,8 @@ bind-key C-a last-window
 
 set -g prefix C-a
 set -g history-limit 10000
-set -g mouse off 
+set -g mouse on 
+set -g repeat-time 0
 
 set-option -g default-shell /bin/zsh
 
@@ -17,7 +18,16 @@ set -g @plugin 'tmux-plugins/tmux-sensible'
 set -g @plugin 'seebi/tmux-colors-solarized'
 set -g @colors-solarized 'dark'
 
-set -g status-right '#(gitmux "#{pane_current_path}")'
+# powerline status bar
+
+set-option -g status on
+set-option -g status-interval 2
+set-option -g status-justify "centre"
+set-option -g status-left-length 60
+set-option -g status-right-length 90
+set-option -g status-left "#(~/src/tmux-powerline/powerline.sh left)"
+set-option -g status-right "#(~/src/tmux-powerline/powerline.sh right)"
+set-hook -g session-created 'run-shell "~/src/tmux-powerline/powerline.sh  init"' # prettifies the window-status segments
 
 # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
 run '~/.tmux/plugins/tpm/tpm'

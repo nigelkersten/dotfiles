@@ -14,10 +14,13 @@ antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-syntax-highlighting
 
 # Load the theme.
-antigen theme kphoen
+# antigen theme agnoster
 
 # Tell antigen that you're done.
 antigen apply
+
+# Remove username from prompt
+DEFAULT_USER prompt_context(){}
 
 export TERM=screen-256color
 
@@ -30,10 +33,8 @@ if [ -f "${HOME}/.gpg-agent-info" ]; then
   export SSH_AUTH_SOCK
 fi
 
-
-
-if [[ -z $TMUX ]]; then
-	  tmux attach -d
-fi
-
 export PATH="/usr/local/sbin:$PATH"
+
+if [[ ! $(tmux list-sessions) ]]; then 
+    tmux
+fi

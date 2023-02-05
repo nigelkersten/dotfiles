@@ -16,6 +16,8 @@ Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'tpope/vim-fugitive'
 Plugin 'jamessan/vim-gnupg'
 Plugin 'itchyny/lightline.vim'
+Plugin 'fatih/vim-go'
+Bundle 'edkolev/tmuxline.vim'
 
 let g:lightline = {
       \ 'colorscheme': 'solarized',
