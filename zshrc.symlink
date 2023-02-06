@@ -32,7 +32,7 @@ if [ -f "${HOME}/.gpg-agent-info" ]; then
 fi
 
 export PATH="/usr/local/sbin:$PATH"
-export GOPATH="${HOME}/src/go"
+export GOPATH="${HOME}/go"
 
 if [[ ! $(tmux list-sessions) ]]; then 
     tmux

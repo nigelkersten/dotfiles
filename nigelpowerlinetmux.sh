@@ -56,8 +56,8 @@ if [ -z $TMUX_POWERLINE_LEFT_STATUS_SEGMENTS ]; then
 		"hostname 33 0" \
 		"pwd 89 211" \
 		"vcs_branch 29 88" \
-		#"vcs_compare 60 255" \
-		#"vcs_staged 64 255" \
+		"vcs_compare 60 255" \
+		"vcs_staged 64 255" \
 		"vcs_modified 9 255" \
 		#"vcs_others 245 0" \
 	)
