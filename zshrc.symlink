@@ -22,8 +22,6 @@ antigen apply
 # Remove username from prompt
 DEFAULT_USER prompt_context(){}
 
-export TERM=screen-256color
-
 # GPG Yubi SSH stuff
 GPG_TTY=$(tty)
 export GPG_TTY
@@ -34,6 +32,7 @@ if [ -f "${HOME}/.gpg-agent-info" ]; then
 fi
 
 export PATH="/usr/local/sbin:$PATH"
+export GOPATH="${HOME}/src/go"
 
 if [[ ! $(tmux list-sessions) ]]; then 
     tmux
