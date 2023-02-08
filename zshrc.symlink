@@ -14,13 +14,13 @@ antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-syntax-highlighting
 
 # Load the theme.
-# antigen theme agnoster
+antigen theme agnoster
 
 # Tell antigen that you're done.
 antigen apply
 
 # Remove username from prompt
-DEFAULT_USER prompt_context(){}
+#DEFAULT_USER prompt_context(){}
 
 # GPG Yubi SSH stuff
 GPG_TTY=$(tty)
@@ -31,8 +31,10 @@ if [ -f "${HOME}/.gpg-agent-info" ]; then
   export SSH_AUTH_SOCK
 fi
 
-export PATH="/usr/local/sbin:$PATH"
-export GOPATH="${HOME}/go"
+#export GOROOT="/usr/local/go"
+#export GOBIN="${GOROOT}/bin"
+#export GOPATH="${HOME}/go"
+export PATH="/usr/local/sbin:${HOME}/go/bin:${PATH}"
 
 if [[ ! $(tmux list-sessions) ]]; then 
     tmux
